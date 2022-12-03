@@ -7,12 +7,15 @@
  */
 
 // Entrada
-var entrada = [1,1,40]
+var entrada = [1,3,5,7,8,10]
 
 var soma = 0
 
 // percorrer a lista e fazer a somatória dos elementos
+entrada.forEach(numero => {
+    soma += numero
+})
 
-let media = 0
+let media = soma / entrada.length
 
 console.log(media.toFixed(1))
