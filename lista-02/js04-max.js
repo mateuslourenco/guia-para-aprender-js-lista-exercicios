@@ -8,9 +8,14 @@
  */
 
 // Entrada
-var entrada = [1,1,40]
+var entrada = [40,1,1,0,-10]
 
-var maior = 0
+var maior = -Infinity
 
+entrada.forEach(num => {
+    if (num > maior) {
+        maior = num
+    }
+})
 
 console.log(maior)
