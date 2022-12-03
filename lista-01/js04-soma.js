@@ -16,10 +16,17 @@
  */
 
 // Entrada
-var n1 = 'A'
-var n2 = 40
+var n1 = 40
+var n2 = 'A'
 
-// Saída
 var resultado = '?'
+if (isNaN(parseFloat(n1))) {
+    resultado = `${n1} não é um número`
+} else if (isNaN(parseFloat(n2))) {
+    resultado = `${n2} não é um número`
+} else {
+    resultado = n1 + n2
+}
+// Saída
 
 console.log(resultado)
