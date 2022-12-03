@@ -10,9 +10,9 @@
 */
 
 // Entrada
-var entrada = 'a'
-
+var entrada = 'J'
+let vogais = ['a', 'e', 'i', 'o', 'u']
 // implemente aqui o condicional para retornar o boolean (true/false) com base na entrada
-var resultado = 'vogal'
+var resultado = vogais.includes(entrada.toString().toLowerCase()) ? 'vogal' : 'consoante'
 
 console.log(resultado)
