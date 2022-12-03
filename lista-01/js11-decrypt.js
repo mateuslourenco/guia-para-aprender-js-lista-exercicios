@@ -12,9 +12,17 @@
  */
 
 // Entrada
-var texto = "bcbdbuf";
-
+var texto = "$fcsb";
+var textoDecripto = "";
 // implemente aqui uma lógica para descriptografar o texto
-var textoDecripto = "abacate";
+for (letra of texto) {
+    if (letra == '@') {
+        textoDecripto += 'z'
+    } else if (letra == '$') {
+        textoDecripto += 'Z'
+    } else {
+        textoDecripto += String.fromCharCode(letra.charCodeAt(0) - 1)
+    }
+}
 
 console.log(textoDecripto);
