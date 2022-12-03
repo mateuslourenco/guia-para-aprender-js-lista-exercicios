@@ -12,9 +12,35 @@
  */
 
 // Entrada
-var entrada = 1
-
+var entrada = 7
+var resultado
 // implemente aqui o condicional para retornar o boolean (true/false) com base na entrada
-var resultado = 'Domingo'
+switch (entrada) {
+    case 1:
+        resultado = 'Domingo'
+        break
+    case 2:
+        resultado = 'Segunda'
+        break
+    case 3:
+        resultado = 'Terça'
+        break
+    case 4:
+        resultado = 'Quarta'
+        break
+    case 5:
+        resultado = 'Quinta'
+        break
+    case 6:
+        resultado = 'Sexta'
+        break
+    case 7:
+        resultado = 'Sabado'
+        break
+    default:
+        resultado = 'Entrada inválida.'
+}
+
+
 
 console.log(resultado)
