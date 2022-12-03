@@ -26,17 +26,19 @@
  */
 
 // Entrada
-var notas = [10, 8, 9.5, 7, 10]
+var notas = [7, 5, 5.5, 6, 5]
 
 // Altere a expressão abaixo para calcular a média a partir do total de notas
 var media, quantidadeDeNotas
 var total = 0
 
 // Faça um loop para achar o total de notas
-
+notas.forEach((nota) => {
+    total += nota
+})
 // Veja como pegar este valor com base na entrada
-quantidadeDeNotas = 5
-media = 0    // ?
+quantidadeDeNotas = notas.length
+media = total / quantidadeDeNotas
 
 var resultado = '👉 a média das ' + quantidadeDeNotas + ' notas do bimestre é ' + media.toFixed(1)
 
